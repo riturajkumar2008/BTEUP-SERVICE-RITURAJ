@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna College Courses - Study Hub</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="courses.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1><i class="fas fa-graduation-cap"></i> APNA COLLEGE COURSES</h1>
+        <p>Super Discount on All Coding Courses! 🎯</p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="container">
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="#" class="active"
+            ><i class="fas fa-graduation-cap"></i> Courses</a
+          >
+          <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h2>🎯 Apna College All Coding Courses at Super Discount! 🎯</h2>
+          <p class="hero-subtitle">
+            🚀 Perfect for Beginners & Intermediate Learners
+          </p>
+          <p class="hero-description">
+            🎓 Trusted by thousands of students across India!
+          </p>
+          <div class="hero-features">
+            <span><i class="fas fa-check-circle"></i> Lifetime Validity</span>
+            <span
+              ><i class="fas fa-check-circle"></i> Assignments & Notes
+              Included</span
+            >
+            <span
+              ><i class="fas fa-check-circle"></i> Full Course Content
+              Access</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+      <div class="container">
+        <h2 class="section-title">Available Courses</h2>
+        <div class="courses-grid">
+          <!-- ALPHA Batch -->
+          <div class="course-card featured">
+            <div class="course-badge">BEST SELLER</div>
+            <div class="course-header">
+              <i class="fas fa-code"></i>
+              <h3>ALPHA 5.0 Batch</h3>
+              <p class="course-subtitle">DSA in Java</p>
+            </div>
+            <div class="course-price">
+              <span class="original-price">₹999</span>
+              <span class="discount-price">Only ₹149</span>
+              <span class="discount-badge">85% OFF</span>
+            </div>
+            <div class="course-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Complete DSA Concepts</li>
+                <li><i class="fas fa-check"></i> Java Programming</li>
+                <li><i class="fas fa-check"></i> Problem Solving</li>
+                <li><i class="fas fa-check"></i> Interview Preparation</li>
+                <li><i class="fas fa-check"></i> Lifetime Access</li>
+              </ul>
+            </div>
+            <button class="enroll-btn" onclick="scrollToContact()">
+              <i class="fas fa-rocket"></i> Enroll Now
+            </button>
+          </div>
+
+          <!-- SIGMA Batch -->
+          <div class="course-card premium">
+            <div class="course-badge">MOST POPULAR</div>
+            <div class="course-header">
+              <i class="fas fa-globe"></i>
+              <h3>SIGMA 8.0 Batch</h3>
+              <p class="course-subtitle">Web Dev with MERN + DSA with Java</p>
+            </div>
+            <div class="course-price">
+              <span class="original-price">₹1499</span>
+              <span class="discount-price">Only ₹399</span>
+              <span class="discount-badge">63% OFF</span>
+            </div>
+            <div class="course-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Full Stack Web Development</li>
+                <li>
+                  <i class="fas fa-check"></i> MERN Stack (MongoDB, Express,
+                  React, Node.js)
+                </li>
+                <li><i class="fas fa-check"></i> DSA in Java</li>
+                <li><i class="fas fa-check"></i> DSA in C++</li>
+                <li><i class="fas fa-check"></i> APTITUDE</li>
+                <li><i class="fas fa-check"></i> Library</li>
+                <li><i class="fas fa-check"></i> Real Projects</li>
+                <li><i class="fas fa-check"></i> Job Ready Skills</li>
+              </ul>
+            </div>
+            <button class="enroll-btn premium-btn" onclick="scrollToContact()">
+              <i class="fas fa-crown"></i> Enroll Now
+            </button>
+          </div>
+
+          <!-- Delta Batch -->
+          <div class="course-card">
+            <div class="course-badge">NEW</div>
+            <div class="course-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Delta Batch 7</h3>
+              <p class="course-subtitle">Web Development</p>
+            </div>
+            <div class="course-price">
+              <span class="original-price">₹799</span>
+              <span class="discount-price">Only ₹199</span>
+              <span class="discount-badge">75% OFF</span>
+            </div>
+            <div class="course-features">
+              <ul>
+                <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
+                <li><i class="fas fa-check"></i> Frontend Development</li>
+                <li><i class="fas fa-check"></i> Responsive Design</li>
+                <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                <li><i class="fas fa-check"></i> Portfolio Projects</li>
+              </ul>
+            </div>
+            <button class="enroll-btn" onclick="scrollToContact()">
+              <i class="fas fa-rocket"></i> Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Courses?</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <i class="fas fa-infinity"></i>
+            <h3>Lifetime Validity</h3>
+            <p>Access your course content forever, no expiry date!</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-book"></i>
+            <h3>Complete Pdf</h3>
+            <p>Comprehensive study materials and assignments included</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-users"></i>
+            <h3>Community Support</h3>
+            <p>Join our community of learners and get help anytime</p>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <h3>Instant Access</h3>
+            <p>Get course access within 1 minute of payment</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile Friendly</h3>
+            <p>Learn on any device, anytime, anywhere</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get Your Course Now!</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>📩 Message here to get your course now:</h3>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fab fa-telegram"></i>
+                <div class="contact-details">
+                  <h4>Telegram</h4>
+                  <a href="https://t.me/itcoursessall" target="_blank"
+                    >@itcoursessall</a
+                  >
+                  <p>Click to join our Telegram channel</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-whatsapp"></i>
+                <div class="contact-details">
+                  <h4>WhatsApp</h4>
+                  <a href="https://wa.me/message/GQLDDOIWQVZUJ1"
+                    >+91 7379134397</a
+                  >
+                  <p>Call or message us on WhatsApp</p>
+                </div>
+              </div>
+            </div>
+            <div class="instant-access">
+              <h4>⚡ Instant Access Guarantee</h4>
+              <p>
+                👉👉Just 1 minute me course ka Access mil jayega apko vo bhi
+                Life time ke liye 👈👈👈
+              </p>
+            </div>
+          </div>
+          <div class="payment-section">
+            <h3>Payment Options</h3>
+            <div class="payment-methods">
+              <div class="payment-method">
+                <h4>UPI Payment</h4>
+                <div class="qr-code">
+                  <img src="qr.jpg" alt="UPI QR Code" />
+                </div>
+                <p>Scan QR code to pay via UPI</p>
+              </div>
+              <div class="payment-method">
+                <h4>Bank Transfer</h4>
+                <div class="bank-details">
+                  <p><strong>upi:</strong> rajputshani77223@okaxis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h3>Study Hub</h3>
+          <p>Your Gateway to Success in Computer Science</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="../index.html">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="https://t.me/itcoursessall">Telegram</a>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <a href="https://t.me/itcoursessall"
+            ><i class="fab fa-telegram"></i> Telegram</a
+          >
+          <a href="https://wa.me/message/GQLDDOIWQVZUJ1"
+            ><i class="fab fa-whatsapp"></i> WhatsApp</a
+          >
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Study Hub | Apna College Courses</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      function scrollToContact() {
+        document.getElementById("contact").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
