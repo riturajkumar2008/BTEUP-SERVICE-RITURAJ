@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BTEUP SERVICE - Diploma & Educational Hub</title> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="icon" href="img/bteup_icon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fw-bold">BTEUP</span> <span class="text-secondary">SERVICE</span> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About us/aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses-1">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#developer-profile">Developer</a></li> <li class="nav-item"><a class="nav-link" href="Apk/index.html">APK</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="syllabusDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus <i class="fa-solid fa-circle-chevron-down"></i>
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="syllabusDropdown">
+                            <li><a class="dropdown-item" href="#">ITI Syllabus</a></li>
+                            <li><a class="dropdown-item" href="syllabus/index.html">Diploma Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#">B.Tech Syllabus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us1">Contact</a></li>
+                </ul>
+                <div class="ms-3">
+                    <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="educationCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="4"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/first.jpg" class="d-block w-100" alt="Education Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Excellence in Education</h3>
+                    <p>Empowering students with knowledge and skills for a brighter future</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/SLIDER1.jpg" class="d-block w-100" alt="Education Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Learn From The Best</h3>
+                    <p>Our expert faculty brings real-world experience to the classroom</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img 4.png" class="d-block w-100" alt="Education Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>State-of-the-art facilities and modern learning tools</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Education Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Beautiful Campus</h3>
+                    <p>A conducive environment for academic excellence</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img5.webp" class="d-block w-100" alt="Education Slide 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Success Stories</h3>
+                    <p>Join thousands of successful graduates from our institution</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-light rounded-circle p-2 me-3">
+                                <i class="fas fa-bell text-primary"></i>
+                            </div>
+                            <h5 class="card-title mb-0">Notifications</h5>
+                        </div>
+                        
+                        <div class="notification-item border-start border-4 border-warning bg-light-yellow p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-calendar-alt me-2"></i>
+                                <h6 class="mb-0">Mid-term Examination Schedule</h6>
+                            </div>
+                            <p class="mb-1 small">  </p>
+                            <small class="text-muted">March 8, 2024</small>
+                        </div>
+                        
+                        <div class="notification-item border-start border-4 border-warning bg-light-yellow p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-briefcase me-2"></i>
+                                <h6 class="mb-0">Career Guidance Workshop</h6>
+                            </div>
+                            <p class="mb-1 small">Join our career guidance workshop on March 20th. Industry experts will share insights.</p>
+                            <small class="text-muted">March 7, 2025</small>
+                        </div>
+                        
+                        <div class="notification-item border-start border-4 border-success bg-light-green p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-umbrella-beach me-2"></i>
+                                <h6 class="mb-0">Spring Break Notice</h6>
+                            </div>
+                            <p class="mb-1 small">Classes will be suspended from March 25-29 for spring break. Regular classes resume March 30th.</p>
+                            <small class="text-muted">March 5, 2024</small>
+                        </div>
+                          <div class="notification-item border-start border-4 border-success bg-light-green p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-umbrella-beach me-2"></i>
+                                <h6 class="mb-0"> important Deadlines</h6>
+                            </div>
+                            <p class="mb-1 small">Classes will be suspended from March 25-29 for spring break. Regular classes resume March 30th.</p>
+                            <small class="text-muted">March 5, 2026</small>
+                        </div>
+                          <div class="notification-item border-start border-4 border-success bg-light-green p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-umbrella-beach me-2"></i>
+                                <h6 class="mb-0">Weekly Highlight</h6>
+                            </div>
+                            <p class="mb-1 small">Classes will be suspended from March 25-29 for spring break. Regular classes resume March 30th.</p>
+                            <small class="text-muted">March 5, 2025
+
+                            </small>
+                        </div>
+                          <div class="notification-item border-start border-4 border-success bg-light-green p-3 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-umbrella-beach me-2"></i>
+                                <h6 class="mb-0"> Event and Announccements</h6>
+                            </div>
+                            <p class="mb-1 small">Classes will be suspended from March 25-29 for spring break. Regular classes resume March 30th.</p>
+                            <small class="text-muted">March 5, 2024</small>
+                        </div>
+                        
+                        <a href="#" class="btn btn-link text-primary">View All Notifications</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-light rounded-circle p-2 me-3">
+                                <i class="fas fa-book text-success"></i>
+                            </div>
+                            <h5 class="card-title mb-0">Resources</h5>
+                        </div>
+                        
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-purple rounded p-2 me-3">
+                                <i class="fas fa-book-open text-purple"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">UP BOARD </h6>
+                                <p class="mb-0 small text-muted">Digital and physical books, journals, and research materials.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-purple rounded p-2 me-3">
+                                <i class="fas fa-book-open text-purple"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">CBSE BOARD</h6>
+                                <p class="mb-0 small text-muted">Digital and physical books, journals, and research materials.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-purple rounded p-2 me-3">
+                                <i class="fas fa-book-open text-purple"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">SBTE BOARD </h6>
+                                <p class="mb-0 small text-muted">Digital and physical books, journals, and research materials.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-blue rounded p-2 me-3">
+                                <i class="fas fa-laptop text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">FREE COURSESS</h6>
+                                <p class="mb-0 small text-muted">Interactive courses and video lectures available 24/7.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="Apk/index.html" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-green rounded p-2 me-3">
+                                <i class="fas fa-file-alt text-success"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">STUDY GROUP APPLICATION </h6>
+                                <p class="mb-0 small text-muted">Downloadable notes, presentations, and practice tests.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-orange rounded p-2 me-3">
+                                <i class="fas fa-comments text-warning"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Discussion Forums</h6>
+                                <p class="mb-0 small text-muted">Connect with peers and instructors for collaborative learning.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="admit.html" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-blue rounded p-2 me-3">
+                                <i class="fas fa-briefcase text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">ADMIT CARD</h6>
+                                <p class="mb-0 small text-muted">ALL BRANCH DOWNLOAD ADMIT CARD  FILL ONLY ENROLLMENT.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="#" class="resource-item d-flex align-items-center p-3 mb-3 text-decoration-none">
+                            <div class="resource-icon bg-light-red rounded p-2 me-3">
+                                <i class="fas fa-headset text-danger"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Technical Support</h6>
+                                <p class="mb-0 small text-muted">24/7 technical assistance for all your learning needs.</p>
+                            </div>
+                            <i class="fas fa-chevron-right ms-auto"></i>
+                        </a>
+                        
+                        <a href="#" class="btn btn-link text-success d-flex align-items-center">
+                            <i class="fas fa-external-link-alt me-2"></i> Access Resource Portal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">BTEUP SERVICE</h2>
+        <p class="text-center mb-4">Join your branch study groups for better learning and collaboration</p>
+        
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn btn-success me-2 rounded-pill">
+                <i class="fab fa-whatsapp me-1"></i> WhatsApp Groups
+            </button>
+            <button class="btn btn-light rounded-pill">
+                <i class="fab fa-telegram me-1"></i> Telegram Groups
+            </button>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-white py-3">
+                <div class="d-flex align-items-center">
+                    <div class="bg-primary p-2 rounded text-white me-3">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h5 class="mb-0">MAIN STUDY GROUP</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="p-3 border rounded">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="me-2 text-success">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                                <h6 class="mb-0">STUDY GROUP 1</h6>
+                            </div>
+                            <p class="small text-muted mb-2">1025 members</p>
+                           
+                            <a href="https://chat.whatsapp.com/GjwMKoW03iMHyboo6tPwAj?mode=ems_copy_t" class="btn btn-success btn-sm w-100"> Join group  </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="developer-profile" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">About the Developer</h2>
+            <div class="card p-4 shadow-sm mx-auto" style="max-width: 800px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-3">Rituraj Kumar</h4>
+                    <p class="card-text fs-5 text-center mb-4">
+                        मैं **रितुराज कुमार** हूँ — एक ऐप और वेब डेवलपर, जिसे साइबर सुरक्षा का ज्ञान है। मेरी सोच है कि तकनीक और सुरक्षा को मिलाकर भारत को नई ऊँचाइयों तक पहुँचाया जाए। मेरा लक्ष्य है कि भारत को AI और सुरक्षित तकनीक में अग्रणी बनाया जाए।
+                    </p>
+                    
+                    <hr>
+                    <h5 class="text-center mb-3 text-secondary">Contact & Social Links</h5>
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i> 
+                            <a href="mailto:kumarrituraj2008@gmail.com

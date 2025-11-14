@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyGroupsHub | Polytechnic Resources</title>
+
+    <style>
+      /* ===== GLOBAL ===== */
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #f5f7ff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #004aad;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      .navbar .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .navbar .menu {
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar a {
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      /* ===== MOBILE MENU BUTTON ===== */
+      .menu-btn {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+      }
+
+      /* ===== MOBILE DROPDOWN ===== */
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: #003578;
+        padding: 10px;
+      }
+
+      .mobile-menu a {
+        padding: 10px 0;
+        color: white;
+        border-bottom: 1px solid #ffffff33;
+      }
+
+      /* ===== MAIN SECTION ===== */
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #004aad;
+        border-radius: 8px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      button {
+        margin-top: 15px;
+        background: #004aad;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 17px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #002d72;
+      }
+
+      /* ===== BRANCH SECTION ===== */
+      .branch-box {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .branch-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .branch-item {
+        background: #e8f0ff;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #004aad;
+        font-weight: 600;
+        color: #004aad;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background: #002d72;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 14px;
+      }
+
+      /* ===== MEDIA QUERY (MOBILE RESPONSIVE) ===== */
+      @media (max-width: 768px) {
+        .navbar .menu {
+          display: none;
+        }
+
+        .menu-btn {
+          display: block;
+        }
+
+        .navbar .logo img {
+          width: 35px;
+          height: 35px;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        .branch-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/icon.jpg" alt="Logo" />
+        &nbsp;<strong>StudyGroupsHub</strong>
+      </div>
+
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="#admit">Admit</a>
+        <a href="#verify">Verification</a>
+        <a href="#branch">Branch</a>
+        <a href="#footer">Contact</a>
+      </div>
+
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- MOBILE MENU DROPDOWN -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="#admit">Admit</a>
+      <a href="#verify">Verification</a>
+      <a href="#branch">Branch</a>
+      <a href="#footer">Contact</a>
+    </div>
+
+    <!-- ===== ADMIT CARD SECTION ===== -->
+    <div class="container" id="admit">
+      <h1>🎓 BTEUP Admit Card 2025</h1>
+      <p>अपना Enrollment Number दर्ज करें 👇</p>
+
+      <input type="text" id="enrollInput" placeholder="E233123456" />
+      <button onclick="openAdmitCard()">Download Admit Card</button>
+    </div>
+
+    <!-- ===== VERIFICATION CARD SECTION ===== -->
+    <div class="container" id="verify">
+      <h1>📝 BTEUP Verification Card</h1>
+      <p>अपना Enrollment Number दर्ज करें 👇</p>
+
+      <input type="text" id="verifyInput" placeholder="E24XXXXXXX" />
+      <button onclick="openVerifyCard()">Download Verification Card</button>
+    </div>
+
+    <!-- ===== BRANCH MATERIAL SECTION ===== -->
+    <div class="branch-box" id="branch">
+      <h2>📚 Branch Materials</h2>
+
+      <div class="branch-grid">
+        <div class="branch-item">CSE</div>
+        <div class="branch-item">Mechanical</div>
+        <div class="branch-item">Civil</div>
+        <div class="branch-item">Electrical</div>
+        <div class="branch-item">Electronics</div>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">© 2025 StudyGroupsHub • All Rights Reserved</footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      function toggleMenu() {
+        let menu = document.getElementById("mobileMenu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+
+      function openAdmitCard() {
+        let enroll = document.getElementById("enrollInput").value.trim();
+        if (enroll === "") {
+          alert("कृपया अपना Enrollment Number दर्ज करें!");
+          return;
+        }
+        let url = `https://bteup.ac.in/ESeva/Student/AdmitCard.aspx?EnrollNumber=${encodeURIComponent(
+          enroll
+        )}`;
+        window.open(url, "_blank");
+      }
+
+      function openVerifyCard() {
+        let enroll = document.getElementById("verifyInput").value.trim();
+        if (enroll === "") {
+          alert("कृपया अपना Enrollment Number दर्ज करें!");
+          return;
+        }
+        let url = `https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber=${encodeURIComponent(
+          enroll
+        )}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
+
+
