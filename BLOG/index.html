@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Blog Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore curated articles, notes, PYQs, and resources for all engineering branches." />
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">ENGI<span>HUB</span></a>
+            <nav class="nav">
+                <a href="../index.html">Home</a>
+                <a href="../syllabus/index.html">Syllabus</a>
+                <a href="../About us/aboutus.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Engineering Blog Hub</h1>
+            <p>Discover branch-wise articles, interview prep, projects, and study resources.</p>
+            <div class="controls">
+                <div class="search">
+                    <input id="searchInput" type="text" placeholder="Search topics, branches, tags..." aria-label="Search" />
+                </div>
+                <div class="filters">
+                    <select id="branchFilter" aria-label="Filter by branch">
+                        <option value="all">All Branches</option>
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                        <option value="ece">ECE</option>
+                        <option value="eee">EEE</option>
+                        <option value="me">ME</option>
+                        <option value="ce">CE</option>
+                    </select>
+                    <select id="typeFilter" aria-label="Filter by type">
+                        <option value="all">All Types</option>
+                        <option value="notes">Notes</option>
+                        <option value="pyq">Previous Year</option>
+                        <option value="project">Projects</option>
+                        <option value="interview">Interview</option>
+                        <option value="blog">Blog</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <span>Blog</span>
+        </nav>
+
+        <section class="grid" id="cardGrid">
+            <!-- Cards populated from JS -->
+        </section>
+
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="grid" id="featuredGrid"></div>
+        </section>
+
+        <section class="layout">
+            <div class="layout__content">
+                <div class="latest__header">
+                    <h2>Latest Posts</h2>
+                    <div id="resultCount" class="muted"></div>
+                </div>
+                <div id="latestList" class="list"></div>
+                <div id="pagination" class="pagination" role="navigation" aria-label="Pagination"></div>
+            </div>
+            <aside class="layout__sidebar">
+                <div class="widget">
+                    <h3>Categories</h3>
+                    <ul id="categoriesList" class="list--plain"></ul>
+                </div>
+                <div class="widget">
+                    <h3>Popular Tags</h3>
+                    <div id="tagsCloud" class="tags"></div>
+                </div>
+                <div class="widget">
+                    <h3>Trending</h3>
+                    <ul id="trendingList" class="list--thumbs"></ul>
+                </div>
+                <div class="widget">
+                    <h3>Archives</h3>
+                    <ul id="archivesList" class="list--plain"></ul>
+                </div>
+                <div class="widget author">
+                    <img class="author__avatar" src="../img/srhacker.jpg" alt="Author" />
+                    <div class="author__meta">
+                        <h4>Team EngiHub</h4>
+                        <p class="muted">We curate the best engineering resources across all branches.</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>Newsletter</h3>
+                    <form id="newsletterForm" class="newsletter" autocomplete="off">
+                        <input id="newsletterEmail" type="email" placeholder="Your email" required />
+                        <button class="btn btn--accent" type="submit">Subscribe</button>
+                        <div id="newsletterMsg" class="muted" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </aside>
+        </section>
+
+        <section class="bookmarks">
+            <div class="bookmarks__header">
+                <h2>Your Bookmarks</h2>
+                <button id="clearBookmarks" class="btn btn--ghost" aria-label="Clear bookmarks">Clear All</button>
+            </div>
+            <div class="grid grid--bookmarks" id="bookmarkGrid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> EngiHub. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="../INFORNATION TECHNOLOGY/index.html">IT</a>
+                <a href="../cs/index.html">CSE</a>
+                <a href="../electronic/index.html">ECE</a>
+                <a href="../MECHNICAL/index.html">ME</a>
+                <a href="../civil engineer/civil/index.html">CE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
